@@ -1,105 +1,32 @@
-<!--
-Ready-to-use single-file portfolio for GitHub Pages.
-
-How to use:
-1) Replace ALL instances of Mona Shahbazi, SHORT_TAGLINE, and the SPLINE iframe placeholder below.
-2) Save this file as index.html and upload to a GitHub repo named:  your-github-username.github.io
-   (see step-by-step guide in the chat to create the repo and publish)
-3) Visit https://your-github-username.github.io to see your page live.
-
-Notes:
-- To embed your Spline scene: in Spline choose Share → Embed, copy the <iframe> they give you and paste it inside the <!-- SPLINE IFRAME --> area below.
-- If Spline gives a full <iframe> with width/height inline styles, it's fine — you can paste the whole iframe; the CSS below will make it responsive.
-- Edit text, swap images, add more project sections as you like.
--->
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="3D / AR / VR portfolio" />
-  <title>Mona Shahbazi — 3D Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    :root{--bg:#ffffff;--text:#0b1220;--muted:#6b7280;--accent:#7c3aed}
-    *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial; margin:0; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased}
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid #f0f0f0}
-    .brand{font-weight:700;letter-spacing:0.2px}
-    .nav{font-size:14px;color:var(--muted)}
-    main{max-width:1100px;margin:40px auto;padding:0 20px}
-    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
-    h1{font-size:clamp(28px,4vw,44px);margin:0}
-    p.lead{margin:0;color:var(--muted);font-size:16px}
-
-    /* responsive embed wrapper (keeps iframe at good aspect ratio) */
-    .spline-embed{position:relative;width:100%;padding-top:56.25%; /* 16:9 */ background:#000;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(16,24,40,0.06)}
-    .spline-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-
-    .meta{margin-top:8px;color:var(--muted);font-size:14px}
-
-    footer{margin-top:44px;padding:24px 28px;border-top:1px solid #f0f0f0;text-align:center;color:var(--muted);font-size:14px}
-
-    /* small screens */
-    @media (min-width:900px){
-      .hero{grid-template-columns:1fr 560px}
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f5f5f5;
     }
-
-    /* small helpers */
-    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
-    .muted{color:var(--muted)}
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="brand">Mona Shahbazi</div>
-    <nav class="nav muted">3D · AR/VR · HCI · Architecture</nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div>
-        <h1>Mona Shahbazi</h1>
-        <p class="lead">SHORT_TAGLINE — a quick sentence about what you do (e.g. AR/VR dev, 3D modeling, HCI, architect).</p>
-        <p class="meta">Projects below are interactive — click and explore. Built with Spline embeds and hosted on GitHub Pages.</p>
-      </div>
-
-      <!-- Spline embed area -->
-      <div>
-        <div class="spline-embed" id="splineArea">
-          <iframe src='https://my.spline.design/pufferfish-YsfxZ1ztGauyiyMQmmwlUE99/' frameborder='0' width='100%' height='100%'></iframe>
-          <!--
-            PASTE YOUR SPLINE <iframe> HERE
-
-            Example options:
-            1) If Spline gave you a full <iframe ...></iframe> tag: paste the entire tag here.
-            2) Or, paste just the src URL into the src attribute below.
-
-            Replace the src value below ("PASTE_YOUR_SPLINE_EMBED_URL_HERE") with your Spline embed URL if you prefer.
-          -->
-
-          <!-- Option A: paste full iframe from Spline (recommended) -->
-          <!--
-          <iframe src="https://prod.spline.design/your-scene/scene.splinecode" frameborder="0" allow="fullscreen; vr; xr; accelerometer; gyroscope; camera; microphone"></iframe>
-          -->
-
-          <!-- Option B: minimal iframe you can edit quickly (replace the src) -->
-          <iframe src="PASTE_YOUR_SPLINE_EMBED_URL_HERE" allowfullscreen></iframe>
-        </div>
-
-        <div style="margin-top:12px;font-size:13px;color:var(--muted)">Tip: paste your Spline iframe inside the black preview box above. If nothing shows, check the iframe src and that your Spline scene is shared/public.</div>
-      </div>
-    </section>
-
-    <!-- Add more project sections below as needed -->
-
-  </main>
-
-  <footer>
-    Built with ❤️ · <a class="muted" href="https://github.com" target="_blank" rel="noopener">GitHub Pages</a>
-    <div style="margin-top:8px">Contact — <a href="mailto:your.email@example.com">your.email@example.com</a></div>
-  </footer>
-
+  <h1>Hello, I’m Your Name!</h1>
+  <p>Welcome to my portfolio website.</p>
+  <footer>© 2025 Your Name</footer>
 </body>
 </html>
